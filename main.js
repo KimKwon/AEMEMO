@@ -54,8 +54,10 @@ noteapp.get('/:id/delete', (req, res) => {
 noteapp.get('/schedular',(req,res)=>{
   res.render('schedule');
 });
-noteapp.get('/edit',(req,res)=>{
-
+noteapp.get('/:id/edit', (req, res) => {
+    Memo.findOne({'_id': req.params.id}, (err, doc) => {
+        res.render('edit', {memo: doc});
+    });
 });
 
 
