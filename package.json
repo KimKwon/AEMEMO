@@ -1,0 +1,54 @@
+{
+  "name": "server_prac",
+  "version": "1.0.0",
+  "description": "OSD project -> NOTE APP",
+  "main": "main.js",
+  "scripts": {
+    "start": "node index",
+    "lint": "eslint . --ext js,html --ignore-path .gitignore",
+    "test": "npm run lint && polymer test"
+  },
+  "optionalDependencies": {
+    "runas": "^3.0.0"
+  },
+  "standard": {
+    "ignore": [
+      "/out",
+      "/spec",
+      "/vendor"
+    ],
+    "env": {
+      "browser": true
+    }
+  },
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KimKwon/2017-OSS-Project1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KimKwon/2017-OSS-Project1/issues"
+  },
+  "homepage": "https://github.com/KimKwon/2017-OSS-Project1#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "electron": "^1.6.6",
+    "express": "4.15.2",
+    "jade": "^1.11.0",
+    "mongoose": "^4.9.7",
+    "mysql": "2.13.0",
+    "node-note": "^0.2.0",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "asar": "^0.11.0",
+    "browserify": "^13.1.0",
+    "electabul": "~0.0.4",
+    "electron-docs-linter": "^2.1.0",
+    "request": "*",
+    "standard": "^8.4.0",
+    "standard-markdown": "^2.1.1"
+  }
+}
